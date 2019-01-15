@@ -1,6 +1,6 @@
 import './CommentsList.css';
 
-import React, {PureComponent} from 'react';
+import React from 'react';
 
 export default function CommentsList(props) {
   const {comments, loading, onLoadMore} = props;

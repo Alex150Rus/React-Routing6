@@ -1,6 +1,6 @@
 import './News.css';
 
-import React, {PureComponent} from 'react';
+import React from 'react';
 
 
 export default function News(props) {

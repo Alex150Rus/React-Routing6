@@ -1,6 +1,6 @@
 import './Menu.css';
 
-import React, {PureComponent} from 'react';
+import React from 'react';
 
 export default function Menu(props) {
   const {items} = props;

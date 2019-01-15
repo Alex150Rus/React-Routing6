@@ -1,9 +1,9 @@
 import './Header.css';
 
-import React, {PureComponent} from 'react';
+import React from 'react';
 
-import Menu from 'components/Menu'
-import Brand from 'components/Brand'
+import Menu from '../Menu'
+import Brand from '../Brand'
 
 const items = [
   {title: 'Домашняя', href: '#'},

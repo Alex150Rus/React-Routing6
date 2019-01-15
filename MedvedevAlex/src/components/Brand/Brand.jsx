@@ -1,6 +1,6 @@
 import './Brand.css';
 
-import React, {PureComponent} from 'react';
+import React from 'react';
 
 export default function Brand(props) {
   return (
