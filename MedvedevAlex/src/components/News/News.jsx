@@ -2,7 +2,6 @@ import './News.css';
 
 import React from 'react';
 
-
 export default function News(props) {
   const {news, showTextButton, state} = props;
   return (
