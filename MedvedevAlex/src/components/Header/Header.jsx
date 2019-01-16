@@ -7,7 +7,6 @@ import Brand from 'components/Brand'
 
 const items = [
   {title: 'Домашняя', href: '/'},
-  {title: 'Комментарии', href: '/comments'},
   {title: 'Рейтинг блогеров', href: '/rating'},
   {title: 'Стена', href: '/wall'},
 ];

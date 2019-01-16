@@ -1,6 +1,7 @@
 import PageMain from "components/PageMain";
 import PageComments from "components/PageComments";
 import PageTopBloggers from "components/PageTopBloggers";
+import CommentContainer from "containers/CommentContainer";
 
 export default [
   {
@@ -17,5 +18,10 @@ export default [
     path: '/rating',
     exact: true,
     component: PageTopBloggers,
+  },
+  {
+    path: '/comments/:id',
+    exact: true,
+    component: CommentContainer,
   },
 ]
