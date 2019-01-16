@@ -1,31 +1,22 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import ReactDom from 'react-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'normalize.css';
 
-import Header from 'components/Header'
-import Content from 'components/Content';
-import LeftContentBlock from 'components/LeftContentBlock'
-import RightContentBlock from 'components/RightContentBlock'
-import Footer from 'components/Footer';
-import CommentsListContainer from 'containers/CommentsListContainer';
-import TopBlogersContainer from 'containers/TopBlogersContainer'
+import routes from './routes';
 
-class App extends PureComponent {
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+
+class App extends Component {
 
   render() {
     return (
       <div>
         <Header/>
-        <Content>
-          <LeftContentBlock/>
-          <RightContentBlock/>
-        </Content>
-        <Content>
-          <CommentsListContainer/>
-        </Content>
-        <Content>
-          <TopBlogersContainer/>
-        </Content>
+        <Switch>
+          {routes.map((route, idx) => <Route key={idx} {...route}/>)}
+        </Switch>
         <Footer/>
       </div>
     );
@@ -33,6 +24,6 @@ class App extends PureComponent {
 }
 
 ReactDom.render(
-  <App/>,
-  document.getElementById('root')
+  <BrowserRouter><App/></BrowserRouter>,
+  document.getElementById('root'),
 );

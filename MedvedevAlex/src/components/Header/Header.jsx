@@ -6,10 +6,10 @@ import Menu from 'components/Menu'
 import Brand from 'components/Brand'
 
 const items = [
-  {title: 'Домашняя', href: '#'},
-  {title: 'Личный кабинет', href: '#'},
-  {title: 'Комментарии', href: '#'},
-  {title: 'Рейтинг блогеров', href: '#'},
+  {title: 'Домашняя', href: '/'},
+  {title: 'Комментарии', href: '/comments'},
+  {title: 'Рейтинг блогеров', href: '/rating'},
+  {title: 'Стена', href: '/wall'},
 ];
 
 export default function Header() {
